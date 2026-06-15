@@ -116,7 +116,7 @@ def search_name():
 
     return jsonify({
         'total':   len(matched),
-        'results': [student_summary(s) for s in matched[:50]],  # tối đa 50
+        'results': [student_summary(s) for s in matched[:999999999999]],  # tối đa 50
     })
 
 
